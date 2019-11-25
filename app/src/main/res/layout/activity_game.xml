@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_marginLeft="10px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60px"
+            android:layout_marginLeft="80px"
+            android:text="Moves:"
+            android:textColor="@android:color/black"
+            android:textSize="50px" />
+
+        <TextView
+            android:layout_marginTop="60px"
+            android:id="@+id/count_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0000"
+            android:textColor="@android:color/black"
+            android:textSize="50px" />
+
+        <TextView
+            android:layout_marginTop="60px"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="360px"
+            android:text="Time:"
+            android:textColor="@android:color/black"
+            android:textSize="50px" />
+
+
+        <TextView
+            android:id="@+id/textTimer"
+            android:textSize="50px"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180px"
+            android:text="00:00" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="304dp"
+        android:layout_height="306dp"
+        android:layout_marginTop="140px"
+        android:layout_marginLeft="135px">
+
+        <TableRow
+            android:layout_width="800px"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but1"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:text="1" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but2"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:gravity="center"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:background="@android:color/holo_blue_light"
+                android:text="2" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but3"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:gravity="center"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:background="@android:color/holo_blue_light"
+                android:text="3" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but4"
+                android:layout_width="200px"
+                android:gravity="center"
+                android:layout_height="200px"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:background="@android:color/holo_blue_light"
+                android:text="4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="1000px"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but5"
+                android:layout_width="200px"
+                android:gravity="center"
+                android:layout_height="200px"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:background="@android:color/holo_blue_light"
+                android:text="5" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but6"
+                android:layout_width="200px"
+                android:gravity="center"
+                android:layout_height="200px"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:background="@android:color/holo_blue_light"
+                android:text="6" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but7"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:gravity="center"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:background="@android:color/holo_blue_light"
+                android:text="7" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but8"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:gravity="center"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:background="@android:color/holo_blue_light"
+                android:text="8" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but9"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:gravity="center"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:background="@android:color/holo_blue_light"
+                android:text="9" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but10"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:gravity="center"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:background="@android:color/holo_blue_light"
+                android:text="10" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but11"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:gravity="center"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:background="@android:color/holo_blue_light"
+                android:text="11" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but12"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:gravity="center"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:background="@android:color/holo_blue_light"
+                android:text="12" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but13"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:gravity="center"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:background="@android:color/holo_blue_light"
+                android:text="13" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but14"
+                android:layout_width="200px"
+                android:gravity="center"
+                android:layout_height="200px"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:background="@android:color/holo_blue_light"
+                android:text="14" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but15"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:gravity="center"
+                android:background="@android:color/holo_blue_light"
+                android:text="15" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="70px"
+                android:id="@+id/but16"
+                android:layout_width="200px"
+                android:gravity="center"
+                android:layout_height="200px"
+                android:layout_marginTop="7px"
+                android:layout_marginRight="7px"
+                android:background="@android:color/holo_blue_light" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="345px"
+        android:id="@+id/startGame"
+        android:textAlignment="center"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:text="Start New Game" />
+
+
+
+
+</LinearLayout>

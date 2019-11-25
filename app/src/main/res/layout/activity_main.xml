@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="70px"
+        android:text="Welcome to Game of Fifteen"
+        android:textColor="@android:color/black"
+        android:textSize="70px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="372dp"
+        android:layout_height="440dp"
+        android:src="@drawable/puzzle15"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/iconimage">
+
+        </ImageView>
+
+
+        <Switch
+            android:id="@+id/switchMusic"
+            android:layout_width="250px"
+            android:layout_height="100px"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+
+            android:text="Music" />
+
+        <Button
+            android:id="@+id/start_game"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="300px"
+            android:text="START PLAY"
+            android:textColor="@android:color/holo_blue_light" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
