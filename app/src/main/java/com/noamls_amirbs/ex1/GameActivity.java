@@ -160,7 +160,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 // =========== update the moves =========================//
                                 count_Move++;
                                 String st =  game.setMoves(count_Move);
-                                Log.d("strValue:","val: "+st);
                                 String str = Integer.toString(count_Move);
                                 countMove.setText(st);
 
@@ -184,7 +183,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
     }
-    public void onPause()
+    public void onPause()// override for music and timer function
     {
         super.onPause();
         inPause = true;
@@ -211,11 +210,9 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     private Runnable updateTimerMethod = new Runnable()
     {
 
-    public void run() {
+    public void run() { // game timer , active than the screen on
         milliseconfTime = SystemClock.uptimeMillis() - startTime;
 
-        Log.d("Timer", "milliseconfTime : "+milliseconfTime);
-        Log.d("Timer", "TimeBuff : "+TimeBuff);
 
         update = TimeBuff + milliseconfTime;
         second = (int) (update / 1000);

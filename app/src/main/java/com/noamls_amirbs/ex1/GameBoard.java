@@ -4,7 +4,7 @@ import java.util.Random;
 public class GameBoard
 {
 
-    public int [][] mixBoard(int [][] board)
+    public int [][] mixBoard(int [][] board)// mix the board to stat the game
     {
         int [] array = new int[16];
         int index = 0;
@@ -32,7 +32,7 @@ public class GameBoard
         return board;
     }
 
-    public Boolean checkRandomNumber(int []array, int index, int n)
+    public Boolean checkRandomNumber(int []array, int index, int n)// make sure the don't get the same random number
     {
         for(int i = 0; i<index; i++)
         {
@@ -42,7 +42,7 @@ public class GameBoard
         return true;
     }
 
-    public int [] moveOption(int i, int j )
+    public int [] moveOption(int i, int j )// cheack any option
     {
         int [] resArray = new int [4];
 
